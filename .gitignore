@@ -162,7 +162,7 @@ cython_debug/
 # content stuff
 content/*/daniel/
 content/*/results/
-content/*/*
+content/*/debug_states
 node_modules
 debug_states
 
