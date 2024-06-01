@@ -165,3 +165,7 @@ content/*/results/
 content/*/*
 node_modules
 debug_states
+
+# Added by cargo
+
+/target
