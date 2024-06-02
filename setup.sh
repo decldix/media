@@ -13,3 +13,6 @@ sudo snap install slides
 
 # Toilet
 sudo apt install toilet toilet-fonts
+
+# other utils for the scripts
+sudo apt install rename libxt-dev libxi-dev libgl-dev

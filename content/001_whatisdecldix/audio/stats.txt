@@ -1,0 +1,10 @@
+00:00:04.96 01_intro.mp3
+00:00:19.72 02_What_is_decldix.mp3
+00:00:11.00 03_git.mp3
+00:00:08.59 04_onboarding.mp3
+00:00:04.02 05_secret_management.mp3
+00:00:12.36 06_multi_host.mp3
+00:00:11.13 07_multi_user.mp3
+00:00:26.78 08_modules.mp3
+00:00:38.64 09_call_for_contribution.mp3
+00:02:17.20 audio.mp3
