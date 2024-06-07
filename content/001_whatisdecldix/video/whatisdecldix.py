@@ -47,19 +47,18 @@ duration = audio_decldix.duration
 bg = ColorClip(size=VIDEO_SIZE, color=BG_COLOR)
 bg = bg.set_duration(duration).set_fps(FPS)
 
-decldix = TextClip("decldix", font="UbuntuNerdFont-Bold", fontsize = FONT_SMALL, color=TEXT_COLOR)
-decldix = decldix.set_position(("center",0-VIDEO_SIZE[1]/25)).set_duration(duration)
+decldix = TextClip("decldix", font="UbuntuNerdFont-Bold", fontsize = FONT_MEDIUM, color=TEXT_COLOR)
+decldix = decldix.set_position(("center",VIDEO_SIZE[1]/25)).set_duration(duration)
 
-declarative = TextClip("decl arative", font="UbuntuNerdFont-Bold", fontsize = FONT_TINY, color=TEXT_COLOR)
-declarative = declarative.set_position(("center",decldix.h-VIDEO_SIZE[1]/25)).set_start(4).set_duration(duration)
+declarative = TextClip("decl arative", font="UbuntuNerdFont-Bold", fontsize = FONT_REALSMALL, color=TEXT_COLOR)
+declarative = declarative.set_position(("center",decldix.h)).set_start(4).set_duration(duration)
 
-debian = TextClip("d ebian", font="UbuntuNerdFont-Bold", fontsize = FONT_TINY, color=TEXT_COLOR)
-debian = debian.set_position(("center",decldix.h+declarative.h-VIDEO_SIZE[1]/25)).set_start(4.3).set_duration(duration)
+debian = TextClip("d ebian", font="UbuntuNerdFont-Bold", fontsize = FONT_REALSMALL, color=TEXT_COLOR)
+debian = debian.set_position(("center",decldix.h+declarative.h)).set_start(4.3).set_duration(duration)
 
-nix = TextClip("n ix", font="UbuntuNerdFont-Bold", fontsize = FONT_TINY, color=TEXT_COLOR)
-nix = nix.set_position(("center",decldix.h+declarative.h+debian.h-VIDEO_SIZE[1]/25)).set_start(4.5).set_duration(duration)
+nix = TextClip("n ix", font="UbuntuNerdFont-Bold", fontsize = FONT_REALSMALL, color=TEXT_COLOR)
+nix = nix.set_position(("center",decldix.h+declarative.h+debian.h)).set_start(4.5).set_duration(duration)
 
 whatisdecldix = CompositeVideoClip([bg, decldix, declarative, debian, nix]).set_audio(audio_decldix).set_duration(duration)
-
 
 whatisdecldix.write_videofile("./video/whatisdecldixdecldix.mp4", fps=FPS)
